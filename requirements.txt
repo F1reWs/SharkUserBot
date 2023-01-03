@@ -1,4 +1,3 @@
---upgrade
 pyrogram
 install
 wheel
