@@ -92,7 +92,7 @@ xcode-select --install ; /bin/bash -c "$(curl -fsSL https://raw.githubuserconten
 
 - Open windows.bat
 
-<h1>Groups and support</h1>
+<h1>Channel and Group</h1>
 <a href="https://t.me/shark_userbot">
 <img alt="Telegram" src="https://img.shields.io/badge/Telegram_Channel-0a0a0a?style=for-the-badge&logo=telegram">
 </a>
@@ -101,5 +101,5 @@ xcode-select --install ; /bin/bash -c "$(curl -fsSL https://raw.githubuserconten
 </a>
     
 <h1>Developer</h1>
-- Platon <a href="https://github.com/Master-Stroke">Github</a> | <a href="https://t.me/MasterStroke777">Telegram</a> <br>
+➤ Platon <a href="https://github.com/Master-Stroke">Github</a> | <a href="https://t.me/MasterStroke777">Telegram</a> <br>
  
