@@ -17,7 +17,3 @@ def prestart(api_id, api_hash, device_mod):
             except Exception as f:
                 app.send_message("me", f"Got error: {f}\n\n" + text)
                 pass
-                
-        app.join_chat(-1001601599106)
-        time.sleep(1)
-        app.join_chat(-1001753481681)
