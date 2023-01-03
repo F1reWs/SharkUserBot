@@ -11,3 +11,4 @@ datetime
 qrcode
 speedtest-cli
 psutil
+pillow
