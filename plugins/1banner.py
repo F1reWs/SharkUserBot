@@ -5,8 +5,7 @@ from plugins.settings.main_settings import version
 from prefix import my_prefix
 prefix = my_prefix()
 
-if not os.name == "nt":
-  os.system("cls" if os.name == "nt" else "clear")
+os.system("cls" if os.name == "nt" else "clear")
 print(f"""[blue]
  ____  _                _    _   _               ____        _   
 / ___|| |__   __ _ _ __| | _| | | |___  ___ _ __| __ )  ___ | |_ 
