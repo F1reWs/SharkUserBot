@@ -1,0 +1,14 @@
+--upgrade
+pyrogram
+install
+wheel
+telegraph
+requests
+wget
+rich
+wikipedia
+gTTS
+datetime
+qrcode
+speedtest-cli
+psutil

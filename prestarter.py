@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 import sys
 import os
-
+import time
 
 def prestart(api_id, api_hash, device_mod):
     app = Client("my_account", api_id=api_id, api_hash=api_hash, device_model=device_mod)
@@ -18,4 +18,6 @@ def prestart(api_id, api_hash, device_mod):
                 app.send_message("me", f"Got error: {f}\n\n" + text)
                 pass
                 
-        app.join_chat("foxteam0")
+        app.join_chat(-1001601599106)
+        time.sleep(1)
+        app.join_chat(-1001753481681)
