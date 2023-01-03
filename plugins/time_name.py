@@ -9,7 +9,7 @@ prefix = my_prefix()
 
 @Client.on_message(filters.command("tn", prefixes=prefix) & filters.me)
 def time_name(client, msg):
-   msg.edit(f"**Успешно поставил время в профиле!**")
+   msg.edit(f"**Successfully added time to prfile!**")
    while True:
       Hour = int(datetime.datetime.now().strftime("%H"))
       Minute = datetime.datetime.now().strftime("%M")
