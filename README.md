@@ -56,21 +56,10 @@ pkg update -y && pkg install python3 wget -y && pkg install git && termux-wake-l
 apt update -y && sudo apt install python3 python3-pip wget -y && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
 ```
 
-- YUM (RHEL based)
-
-```
-yum -y update && sudo yum install wget python3 curl -y && python3 <(curl -sSL https://bootstrap.pypa.io/get-pip.py) && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
-```
-
 - PACMAN (Arch based)
 
 ```
 sudo pacman -Sy python3 wget curl && python3 <(curl -sSL https://bootstrap.pypa.io/get-pip.py) && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
-```
-
-- EMERGE (Gentoo)
-```
-sudo emerge python wget net-misc/curl && python3 <(curl -sSL https://bootstrap.pypa.io/get-pip.py) && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
 ```
 
 - MacOS
