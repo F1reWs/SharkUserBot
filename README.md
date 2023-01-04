@@ -53,7 +53,7 @@ pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-t
 
 
 ```
-apt update -y && sudo apt install python3 python3-pip wget -y && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
+sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install git && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot-main && pip install -r requirements.txt && python3 main.py)
 ```
 
 - PACMAN (Arch based)
