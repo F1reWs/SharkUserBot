@@ -74,5 +74,5 @@ async def update(client, message):
     except:
         await message.edit(f"**An error occured...**")
 
-module_list['Restarter'] = f'{prefix}restart'
+module_list['Restarter'] = f'{prefix}restart | !update'
 file_list['Restarter'] = 'restarter.py'
