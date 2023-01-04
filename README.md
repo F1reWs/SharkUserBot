@@ -46,7 +46,7 @@ file_list['Example'] = 'example.py'
 - Termux
 
 ```
-pkg update -y && pkg install python3 wget -y && pkg install git && termux-wake-lock && git clone  && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
+pkg update -y && pkg install python3 wget -y && pkg install git && termux-wake-lock && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
 ```
 
 - APT (Debian based)
