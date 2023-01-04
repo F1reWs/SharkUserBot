@@ -11,7 +11,10 @@ prefix = my_prefix()
 
 
 async def restart(message: Message, restart_type):
-    text = "2"
+    if restart_type == "update":
+        text = "1"
+    else:
+        text = "2"
 
     if os.name == "nt":
         await os.execvp(
@@ -45,6 +48,31 @@ async def restart_get(client, message):
         await restart(message, restart_type="restart")
     except:
         await message.edit("**An error occured...**")
+
+
+# Update
+@Client.on_message(filters.command('update', prefixes="!") & filters.me)
+async def update(client, message):
+    try:
+        await message.edit('**Updating...**')
+        link = "https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip"
+        wget.download(link, 'temp/archive.zip')
+
+        with zipfile.ZipFile("temp/archive.zip", "r") as zip_ref:
+            zip_ref.extractall("temp/")
+        os.remove("temp/archive.zip")
+
+        shutil.make_archive("temp/archive", "zip", "temp/SharkUserBot-main/")
+
+        with zipfile.ZipFile("temp/archive.zip", "r") as zip_ref:
+            zip_ref.extractall(".")
+        os.remove("temp/archive.zip")
+        shutil.rmtree("temp/SharkUserBot-main")
+
+        await message.edit('**Userbot succesfully updated\nRestarting...**')
+        await restart(message, restart_type="update")
+    except:
+        await message.edit(f"**An error occured...**")
 
 module_list['Restarter'] = f'{prefix}restart'
 file_list['Restarter'] = 'restarter.py'
