@@ -65,7 +65,7 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 
 - Download and Unzip <a href="https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip">This file</a>
 
-- Write in CMD `pip install -r requirements.txt`
+- Write in terminal `pip install -r requirements.txt`
 
 <h4>How to start on Windows</h3>
 
