@@ -64,9 +64,13 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 
 - Write in CMD `pip install -r requirements.txt`
 
-<h4>How to start</h3>
+<h4>How to start on Windows</h3>
 
 - Open windows.bat
+
+<h4>How to start on Mac OS</h3>
+
+- Type in terminal `python3 main.py`
 
 <h1>Channel and Group</h1>
 <a href="https://t.me/shark_userbot">
