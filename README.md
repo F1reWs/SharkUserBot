@@ -38,7 +38,7 @@ async def example_edit(client, message):
 module_list['Example'] = f'{prefix}example_edit'
 file_list['Example'] = 'example.py'
 ```
-<h1>How to update UserBot?</h1>
+<h2>How to update UserBot?</h2>
 
 - Type in telegram `!update` (must be v0.3+)
 
