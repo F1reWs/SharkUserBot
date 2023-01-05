@@ -39,6 +39,7 @@ module_list['Example'] = f'{prefix}example_edit'
 file_list['Example'] = 'example.py'
 ```
 <h1>How to update UserBot?</h1>
+
 - Type in telegram `!update` (must be v0.3+)
 
 <h1>Install and Start</h1>
