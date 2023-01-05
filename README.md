@@ -51,24 +51,11 @@ pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-t
 
 - APT (Debian/Ubuntu based)
 
-
 ```
 sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install git && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot-main && pip install -r requirements.txt && python3 main.py)
 ```
 
-- PACMAN (Arch based)
-
-```
-sudo pacman -Sy python3 wget curl && python3 <(curl -sSL https://bootstrap.pypa.io/get-pip.py) && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm -rf foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
-```
-
-- MacOS
-
-```
-xcode-select --install ; /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" && brew install python3 && pip3 install --upgrade pip && pip3 install wheel && brew install wget && wget -O foxub.$$ https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip && (unzip foxub.$$ && rm foxub.$$ && cd SharkUserBot-main && pip3 install -r requirements.txt && python3 main.py)
-```
-
-<h3>Windows</h2>
+<h3>Windows/Mac OS</h2>
 <h4>Install</h3>
 
 - Install <a href="https://www.python.org/downloads/">python3</a>
