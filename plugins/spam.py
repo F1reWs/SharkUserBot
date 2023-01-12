@@ -19,5 +19,5 @@ def spam(client, msg):
         except FloodWait as e:
             sleep(e.x)
 
-module_list['Spam'] = f'{prefix}spam [text]'
+module_list['Spam'] = f'{prefix}spam [amount] [text]'
 file_list['Spam'] = 'spam.py'
