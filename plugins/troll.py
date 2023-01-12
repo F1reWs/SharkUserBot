@@ -2,12 +2,175 @@ from pyrogram import Client, filters
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 from plugins.settings.main_settings import module_list, file_list
 from collections import deque
+from time import sleep
 import asyncio
 import random
+from random import shuffle
 
 from prefix import my_prefix
 prefix = my_prefix()
 
+REPLACEMENT_MAP = {
+    'А':'ɐ',
+    'Б':'ƍ',
+    'В':'ʚ',
+    'Г':'ɹ',
+    'Д':'ɓ',
+    'Е':'ǝ',
+    'Ё':'ǝ',
+    'Ж':'ж',
+    'З':'ε',
+    'И':'и',
+    'Й':'ņ',
+    'К':'ʞ',
+    'Л':'v',
+    'М':'w',
+    'Н':'н',
+    'О':'о',
+    'П':'u',
+    'Р':'d',
+    'С':'ɔ',
+    'Т':'ɯ',
+    'У':'ʎ',
+    'Ф':'ф',
+    'Х':'х',
+    'Ц':'ǹ',
+    'Ч':'Һ',
+    'Ш':'m',
+    'Щ':'m',
+    'Ъ':'q',
+    'Ь':'q',
+    'Э':'є',
+    'Я':'ʁ',
+    'а':'ɐ',
+    'б':'ƍ',
+    'в':'ʚ',
+    'г':'ɹ',
+    'д':'ɓ',
+    'е':'ǝ',
+    'ё':'ǝ',
+    'ж':'ж',
+    'з':'ε',
+    'и':'и',
+    'й':'ņ',
+    'к':'ʞ',
+    'л':'v',
+    'м':'w',
+    'н':'н',
+    'о':'о',
+    'п':'u',
+    'р':'d',
+    'с':'ɔ',
+    'т':'ɯ',
+    'у':'ʎ',
+    'ф':'ф',
+    'х':'х',
+    'ц':'ǹ',
+    'ч':'Һ',
+    'ш':'m',
+    'щ':'m',
+    'ъ':'q',
+    'ь':'q',
+    'э':'є',
+    'я':'ʁ',
+    "a": "ɐ",
+    "b": "q",
+    "c": "ɔ",
+    "d": "p",
+    "e": "ǝ",
+    "f": "ɟ",
+    "g": "ƃ",
+    "h": "ɥ",
+    "i": "ᴉ",
+    "j": "ɾ",
+    "k": "ʞ",
+    "l": "l",
+    "m": "ɯ",
+    "n": "u",
+    "o": "o",
+    "p": "d",
+    "q": "b",
+    "r": "ɹ",
+    "s": "s",
+    "t": "ʇ",
+    "u": "n",
+    "v": "ʌ",
+    "w": "ʍ",
+    "x": "x",
+    "y": "ʎ",
+    "z": "z",
+    "A": "∀",
+    "B": "B",
+    "C": "Ɔ",
+    "D": "D",
+    "E": "Ǝ",
+    "F": "Ⅎ",
+    "G": "פ",
+    "H": "H",
+    "I": "I",
+    "J": "ſ",
+    "K": "K",
+    "L": "˥",
+    "M": "W",
+    "N": "N",
+    "O": "O",
+    "P": "Ԁ",
+    "Q": "Q",
+    "R": "R",
+    "S": "S",
+    "T": "┴",
+    "U": "∩",
+    "V": "Λ",
+    "W": "M",
+    "X": "X",
+    "Y": "⅄",
+    "Z": "Z",
+    "0": "0",
+    "1": "Ɩ",
+    "2": "ᄅ",
+    "3": "Ɛ",
+    "4": "ㄣ",
+    "5": "ϛ",
+    "6": "9",
+    "7": "ㄥ",
+    "8": "8",
+    "9": "6",
+    ",": "'",
+    ".": "˙",
+    "?": "¿",
+    "!": "¡",
+    '"': ",,",
+    "'": ",",
+    "(": ")",
+    ")": "(",
+    "[": "]",
+    "]": "[",
+    "{": "}",
+    "}": "{",
+    "<": ">",
+    ">": "<",
+    "&": "⅋",
+    "_": "‾",
+}
+
+@Client.on_message(filters.command("iq", prefix) & filters.me)
+def iq(_, msg):
+    progress = 0
+
+    while progress < 100:
+        try:
+            text = "🧠 Провожу тест на IQ " + str(progress) + "%"
+            msg.edit(text)
+
+            progress += random.randint(100, 200) / 30
+            sleep(0.05)
+
+        except FloodWait as e:
+            sleep(e.x)
+
+    msg.edit("Готово!✅")
+    sleep(1.5)
+    msg.edit("🧠 Поздравляю, твой IQ - " + str(random.randint(50, 200)))
 
 @Client.on_message(filters.command("hack", prefix) & filters.me)
 async def hack(client, message):
@@ -30,6 +193,20 @@ async def hack(client, message):
     text = "🐓 Нашли файлы что ты петух!"
     await message.edit(text)
 
+@Client.on_message(filters.command("flip", prefix) & filters.me)
+def flip(_, msg):
+    text = msg.text.split(".flip", maxsplit=1)[1]
+    final_str = ""
+    for char in text:
+        if char in REPLACEMENT_MAP.keys():
+            new_char = REPLACEMENT_MAP[char]
+        else:
+            new_char = char
+        final_str += new_char
+    if text != final_str:
+        msg.edit(final_str)
+    else:
+        msg.edit(text)    
 
 @Client.on_message(filters.command("drugs", prefix) & filters.me)
 async def drugs(client, message):
@@ -200,5 +377,5 @@ async def kill(client, message):
         await message.edit_text(animation_chars[i % 103])
 
 
-module_list['Troll'] = f'{prefix}hack | {prefix}drugs | {prefix}police | {prefix}ghoul | {prefix}stupid | {prefix}bombs | {prefix}call | {prefix}kill'
+module_list['Troll'] = f'{prefix}hack | {prefix}flip [text]| {prefix}iq | {prefix}drugs | {prefix}police | {prefix}ghoul | {prefix}stupid | {prefix}bombs | {prefix}call | {prefix}kill'
 file_list['Troll'] = 'troll.py'
