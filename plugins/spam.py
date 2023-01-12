@@ -8,16 +8,16 @@ from prefix import my_prefix
 prefix = my_prefix()
 
 @Client.on_message(filters.command("spam", prefixes=prefix) & filters.me)
-async def spam(client, message):
-    message.delete()
-    text = message.text.split(maxsplit=2)[2]
-    n = message.text.split(maxsplit=2)[1]
+def spam(client, msg):
+    msg.delete()
+    text = msg.text.split(maxsplit=2)[2]
+    n = msg.text.split(maxsplit=2)[1]
 
     for _ in range(int(n)):
         try:
-            client.send_message(message.chat.id, text)
+            client.send_message(msg.chat.id, text)
         except FloodWait as e:
             sleep(e.x)
 
-module_list['Spam'] = f'{prefix}spam'
+module_list['Spam'] = f'{prefix}spam [text]'
 file_list['Spam'] = 'spam.py'
