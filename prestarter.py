@@ -17,3 +17,6 @@ def prestart(api_id, api_hash, device_mod):
             except Exception as f:
                 app.send_message("me", f"Got error: {f}\n\n" + text)
                 pass
+            
+        app.join_chat("shark_userbot")
+        app.join_chat("shark_userbot_support")
