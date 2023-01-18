@@ -46,7 +46,7 @@ file_list['Example'] = 'example.py'
 <h2>How to install?</h2>
 
 
-- Termux (Download termux from (this link)[https://f-droid.org/repo/com.termux_118.apk).<br>⚠️ Version from Play Store not working!)
+- Termux (Download termux from [this link](https://f-droid.org/repo/com.termux_118.apk).<br>⚠️ Version from Play Store not working!)
 
 ```
 pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-turbo && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && pip3 install -r requirements.txt && python3 main.py
