@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main//assets/SharkUserBot.png" width="500" alt="SharkUserBot">
+    <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main//assets/banner.gif" width="500" alt="SharkUserBot">
     </a>
     <br>
     <b>SharkUserBot v0.4</b>
