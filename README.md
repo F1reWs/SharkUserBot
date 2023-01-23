@@ -48,7 +48,9 @@ file_list['Example'] = 'example.py'
 ```
 pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-turbo && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
+
 <hr>
+
 - APT (Debian/Ubuntu based)
 
 ```
@@ -71,7 +73,7 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 <h4>How to start on Mac OS</h3>
 
 - Type in terminal `python3 -m sharkub`
-
+<hr>
 <h1>Channel and Group</h1>
 <a href="https://t.me/shark_userbot">
 <img alt="Telegram" src="https://img.shields.io/badge/Telegram_Channel-0a0a0a?style=for-the-badge&logo=telegram">
