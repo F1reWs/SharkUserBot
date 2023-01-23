@@ -90,6 +90,6 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
     <li><a href="https://t.me/blackLy_nobot">BlackLy</a> for helping in creating userbot</li>
     <li><a href="https://github.com/delivrance">Dan</a> for pyrogram, which is the base of project</li>
 </ul>    
-    
+<hr>    
 <h1>Developer</h1>
 ➤ Platon <a href="https://github.com/Master-Stroke">Github</a> | <a href="https://t.me/MasterStroke777">Telegram</a> <br>
