@@ -80,9 +80,16 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 <img alt="Telegram" src="https://img.shields.io/badge/Telegram_Chat-0a0a0a?style=for-the-badge&logo=telegram">
 </a>
 <br>
-<br>
 <hr>
 <i>⚠️ This project is provided as-is. Developer doesn't take ANY responsibility over any problems, caused by userbot. By installing SharkUserBot you take all risks on you. Please, consider reading https://core.telegram.org/api/terms for more information.</i>
+<br>
+<hr>
+<b>Special thanks to:</b>
+<ul>
+    <li><a href="https://github.com/A9FM">A9FM</a> for FoxUserBot, which is the base of project</li>
+    <li><a href="https://t.me/blackLy_nobot">BlackLy</a> for helping in creating userbot</li>
+    <li><a href="https://github.com/delivrance">Dan</a> for pyrogram, which is the base of project</li>
+</ul>    
     
 <h1>Developer</h1>
 ➤ Platon <a href="https://github.com/Master-Stroke">Github</a> | <a href="https://t.me/MasterStroke777">Telegram</a> <br>
