@@ -19,7 +19,7 @@
 </a>
 
 </p>
-
+<hr>
 <h1>Custom modules</h1>
 
 <p>You can create your module in SharkUserBot!</p>
