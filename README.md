@@ -36,7 +36,7 @@ async def example_edit(client, message):
     await message.edit("<code>This is an example module</code>")
 
 module_list["Example"] = {
-"example_edit": "Description",
+  "example_edit": "Description",
 }
 file_list["Example"] = "example.py"
 
