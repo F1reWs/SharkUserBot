@@ -38,9 +38,6 @@ async def example_edit(client, message):
 module_list['Example'] = f'{prefix}example_edit'
 file_list['Example'] = 'example.py'
 ```
-<h2>How to update UserBot?</h2>
-
-- Type in telegram `!update` (must be v0.3+)
 
 <h1>Install and Start</h1>
 <h2>How to install?</h2>
@@ -49,13 +46,13 @@ file_list['Example'] = 'example.py'
 - Termux (Download termux from [this link](https://f-droid.org/repo/com.termux_118.apk).)<br>⚠️ Version from Play Store not working!
 
 ```
-pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-turbo && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && pip3 install -r requirements.txt && python3 main.py
+pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-turbo && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
 
 - APT (Debian/Ubuntu based)
 
 ```
-sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install git && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && pip install -r requirements.txt && python3 main.py
+sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install git && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
 
 <h3>Windows/Mac OS</h2>
@@ -73,7 +70,7 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 
 <h4>How to start on Mac OS</h3>
 
-- Type in terminal `python3 main.py`
+- Type in terminal `python3 -m sharkub`
 
 <h1>Channel and Group</h1>
 <a href="https://t.me/shark_userbot">
