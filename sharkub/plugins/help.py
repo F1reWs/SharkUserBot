@@ -39,48 +39,21 @@ async def helps(client, message):
         
     lists = []
     for k, v in module_list.items():
-        lists.append(f'• {k}: {prefix}{f" | {prefix}".join(v.keys())}<br>')
+        lists.append(f'• <b>{k}:</b> (<i>{prefix}{f" | {prefix}".join(v.keys())}</i>)\n')
     a = " "
     for i in lists:
         a = a.lstrip() + f'{i}'
     helpes = f"""
-{len(module_list)} available modules.<br>
+<b>{len(module_list)} available modules.</b><br>
 <br>
 {a}
 """
-    telegraph = Telegraph()
-    telegraph.create_account(short_name='SharkUserBot')
-    link = f"https://telegra.ph/{telegraph.create_page('SharkUserbot Help', html_content=f'{helpes}')['path']}"
-    await message.edit(f"""
-<b>SharkUserBot v{version} RUNNING</b>
-
-<b>Version: {version}</b>
-<b>Modules: {len(module_list)}</b>
-<b>Python: {python_version()}</b>
-<b>Pyrogram: {__version__}</b>
-
-<b><a href={link}>List of commands</a></b>
-<b><a href="https://t.me/shark_userbot_support">💬 | SharkUserBot Support</a></b>
-""", disable_web_page_preview=True)
+    await message.edit(helpes, disable_web_page_preview=True)
 
 
 @Client.on_message(filters.command('info', prefixes=prefix) & filters.me)
 async def _info(client, message): 
     await message.edit("<b>Loading info... please wait</b>")
-    lists = []
-    for k, v in module_list.items():
-        lists.append(f'• {k}: {v}<br>')
-    a = " "
-    for i in lists:
-        a = a.lstrip() + f'{i}'
-    helpes = f"""
-{len(module_list)} available modules.<br>
-<br>
-{a}
-"""
-    telegraph = Telegraph()
-    telegraph.create_account(short_name='SharkUserBot')
-    link = f"https://telegra.ph/{telegraph.create_page('SharkUserbot Help', html_content=f'{helpes}')['path']}"
     cpu_p = psutil.cpu_percent()
     ram_u = int(dict(psutil.virtual_memory()._asdict())["used"])
     text = f"""
@@ -95,7 +68,7 @@ async def _info(client, message):
 <b>RAM usage:</b> <i>{int(ram_u/1048576)} MB</i>
 
 <b><a href="https://github.com/Master-Stroke/SharkUserBot">Github</a></b>
-<b><a href={link}>List of commands</a></b>
+<b><a href="https://t.me/shark_userbot">SharkUserBot News</a></b>
 <b><a href="https://t.me/shark_userbot_support">SharkUserBot Support</a></b>
 """
     try: 
@@ -109,7 +82,7 @@ async def _version(client, message):
    await message.edit(f"<b>SharkUserBot version: <i>{version}</i></b>")
 
 module_list["Help"] = {
-    "help": "Get all commands and other info",
+    "help": "Get all commands",
     "info": "Info about userbot",
     "version": "Get userbot version"
 }

@@ -12,7 +12,7 @@ async def loadmod(client, message):
     if not message.reply_to_message:
         await message.edit("<b>Load module...</b>")
         link = message.command[1]
-        wget.download(link, 'plugins/')
+        wget.download(link, 'sharkub/plugins/')
         await message.edit(
             f"<b>**The module has been loaded successfully.**\nRestart..."
         )

@@ -18,12 +18,13 @@ async def restart(message: Message, restart_type):
 
     if os.name == "nt":
         await os.execvp(
-            "python",
+            "python -m",
             [
-                "python",
-                "main.py",
+                "python -m",
+                "-m",
+                "sharkub",
                 f"{message.chat.id}",
-                f"{message.id}",
+                f"{message.message_id}",
                 f"{text}",
             ],
         )
@@ -32,9 +33,10 @@ async def restart(message: Message, restart_type):
             "python3",
             [
                 "python3",
-                "main.py",
+                "-m",
+                "sharkub",
                 f"{message.chat.id}",
-                f"{message.id}",
+                f"{message.message_id}",
                 f"{text}",
             ],
         )
