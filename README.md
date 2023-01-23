@@ -1,8 +1,8 @@
 <p align="center">
-    <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main//assets/banner.gif" width="500" alt="SharkUserBot">
+    <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main/SharkUserBot.png" width="500" alt="SharkUserBot">
     </a>
     <br>
-    <b>SharkUserBot v0.0.5</b>
+    <b>SharkUserBot v0.4</b>
     <br>
     <b>Telegram userbot</b>
 <br><br>
@@ -26,20 +26,17 @@
 
 ```python3
 from pyrogram import Client, filters
-from ..plugins.settings.main_settings import module_list, file_list
-
-from ..prefix import my_prefix
+from plugins.settings.main_settings import module_list, file_list
+from prefix import my_prefix
 prefix = my_prefix()
+
 
 @Client.on_message(filters.command("example_edit", prefixes=prefix) & filters.me)
 async def example_edit(client, message):
     await message.edit("<code>This is an example module</code>")
-
-module_list["Example"] = {
-  "example_edit": "Description",
-}
-file_list["Example"] = "example.py"
-
+    
+module_list['Example'] = f'{prefix}example_edit'
+file_list['Example'] = 'example.py'
 ```
 <h2>How to update UserBot?</h2>
 
