@@ -13,6 +13,7 @@ def prestart(api_id, api_hash, device_mod):
                 "install",    
                 "pyrogram",
                 "wheel",
+                "utils",
                 "telegraph",
                 "requests",
                 "wget",
