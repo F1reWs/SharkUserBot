@@ -49,14 +49,12 @@ file_list['Example'] = 'example.py'
 pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-turbo && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
 
-<hr>
-
 - APT (Debian/Ubuntu based)
 
 ```
 sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install git && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
-<hr>
+
 <h3>Windows/Mac OS</h2>
 <h4>Install</h3>
 
@@ -65,11 +63,11 @@ sudo apt update -y && sudo apt install python3 python3-pip && sudo apt install g
 - Download and Unzip <a href="https://github.com/Master-Stroke/SharkUserBot/archive/refs/heads/main.zip">This file</a>
 
 - Write in terminal `pip install -r requirements.txt`
-<hr>
+
 <h4>How to start on Windows</h3>
 
 - Open windows.bat
-<hr>
+
 <h4>How to start on Mac OS</h3>
 
 - Type in terminal `python3 -m sharkub`
