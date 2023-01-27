@@ -18,8 +18,7 @@
     <img alt="Python" src="https://img.shields.io/badge/python->=%203.7-blue?style=for-the-badge">
 </a>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=The&20SharkUserBot)](https://git.io/typing-s!vg)
-<hr>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=The+SharkUserBot)](https://git.io/typing-s!vg)
 
 </p>
 <hr>
