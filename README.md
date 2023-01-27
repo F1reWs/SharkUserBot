@@ -10,14 +10,16 @@
 <a href="https://github.com/Master-Stroke/SharkUserBot/commits/main">
     <img alt="last-commit" src="https://img.shields.io/github/last-commit/Master-Stroke/SharkUserBot?style=for-the-badge">
 </a>
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=The&20SharkUserBot)](https://git.io/typing-s!vg)
-<hr>
+
 <a href="https://github.com/Master-Stroke/SharkUserBot">
     <img alt="Stars" src="https://img.shields.io/github/stars/Master-Stroke/SharkUserBot?style=for-the-badge">
     <img alt="Size" src="https://img.shields.io/github/repo-size/Master-Stroke/SharkUserBot?style=for-the-badge">
     <img alt="Language" src="https://img.shields.io/github/languages/top/Master-Stroke/SharkUserBot?style=for-the-badge">
     <img alt="Python" src="https://img.shields.io/badge/python->=%203.7-blue?style=for-the-badge">
 </a>
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=The&20SharkUserBot)](https://git.io/typing-s!vg)
+<hr>
 
 </p>
 <hr>
