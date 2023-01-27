@@ -21,7 +21,7 @@
 </p>
 <hr>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Simple+and+cool+telegram+userbot)](https://git.io/typing-s!vg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Simple+and+cool+telegram+userbot)]
 
 <h1>Custom modules</h1>
 
