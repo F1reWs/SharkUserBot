@@ -2,7 +2,7 @@
     <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main/assets/banner.gif" width="500" alt="SharkUserBot">
     </a>
     <br>
-    <b>SharkUserBot v0.0.8</b>
+    <b>SharkUserBot v0.0.8.3</b>
     <br>
     <b>Telegram userbot</b>
 <br><br>
