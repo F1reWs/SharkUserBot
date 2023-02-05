@@ -2,7 +2,7 @@
     <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main/assets/banner.gif" width="500" alt="SharkUserBot">
     </a>
     <br>
-    <b>SharkUserBot v0.0.6</b>
+    <b>SharkUserBot v0.0.7</b>
     <br>
     <b>Telegram userbot</b>
 <br><br>
@@ -29,9 +29,9 @@
 
 ```python3
 from pyrogram import Client, filters
-from ..plugins.settings.main_settings import module_list, file_list
+from ..settings.main_settings import module_list, file_list
 
-from ..prefix import my_prefix
+from ..settings.prefix import my_prefix
 prefix = my_prefix()
 
 @Client.on_message(filters.command("example_edit", prefixes=prefix) & filters.me)
