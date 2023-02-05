@@ -140,7 +140,7 @@ async def _info(client, message):
 
 @Client.on_message(filters.command('version', prefixes=prefix) & filters.me)
 async def _version(client, message): 
-   await message.edit(f"<b><emoji document_id=5334882760735598374>📝</emoji> SharkUserBot {string['version']}: <i>{version}</i></b>")
+   await message.edit(f"<b><emoji id=5334882760735598374>📝</emoji> SharkUserBot {string['version']}: <i>{version}</i></b>")
 
 @Client.on_message(filters.command('support', prefixes=prefix) & filters.me)
 async def _support(client, message):
