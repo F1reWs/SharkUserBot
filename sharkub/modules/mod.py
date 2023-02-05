@@ -45,19 +45,22 @@ else:
     "loadmod [reply]": "Load module from reply file",
   }
 
-@Client.on_message(filters.command('loadmod', prefixes=prefix) & filters.me)
+@Client.on_message(filters.command(['loadmod', 'dload'], prefixes=prefix) & filters.me)
 async def loadmod(client, message):
     if not message.reply_to_message:
-        await message.edit(string[load_mod])
+        await message.edit(string['load_mod'])
         link = message.command[1]
-        wget.download(link, 'sharkub/modules/')
+        wget.download(link, 'modules/')
         await message.edit(
-            string[loaded]
+            string['loaded']
         )
         await restart(message, restart_type="restart")
     else:
-        await client.download_media(message.reply_to_message.document, file_name='custom/modules/')
         await message.edit(
-            string[loaded]
+          string['load_mod']
+        )
+        await client.download_media(message.reply_to_message.document, file_name='modules/')
+        await message.edit(
+            string['loaded']
         )
         await restart(message, restart_type="restart")

@@ -16,7 +16,7 @@ if lang == "ru":
   string = {
       "code": f"<b><emoji id=4985626654563894116>💻</emoji> Код:</b>\n",
       "success": f"<b><emoji id=5197688912457245639>✅</emoji> Результат</b>:\n",
-      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Результат</b>:\ns",
+      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Ошибка</b>:\ns",
   }    
 
   module_list["PythonShell"] = {
@@ -28,7 +28,7 @@ elif lang == "ua":
   string = {
       "code": f"<b><emoji id=4985626654563894116>💻</emoji> Код:</b>\n",
       "success": f"<b><emoji id=5197688912457245639>✅</emoji> Результат</b>:\n",
-      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Результат</b>:\ns",
+      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Помилка</b>:\ns",
   }    
 
   module_list["PythonShell"] = {
@@ -40,7 +40,7 @@ else:
   string = {
       "code": f"<b><emoji id=4985626654563894116>💻</emoji> Code:</b>\n",
       "success": f"<b><emoji id=5197688912457245639>✅</emoji> Result</b>:\n",
-      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Result</b>:\ns",
+      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Error</b>:\ns",
   }    
 
   module_list["PythonShell"] = {

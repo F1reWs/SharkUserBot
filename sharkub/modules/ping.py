@@ -13,10 +13,12 @@ lang = config.get("Language", "language")
 
 if lang == "ru":
   string = {
-      "code": f"<b><emoji id=4985626654563894116>💻</emoji> Код:</b>\n",
-      "success": f"<b><emoji id=5197688912457245639>✅</emoji> Результат</b>:\n",
-      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Результат</b>:\ns",
-  }    
+      "stable": f"<emoji id=5017221456195486453>🟢</emoji> Стабильный",
+      "good": f"<emoji id=5017036832731300473>🟠</emoji> Хорошый",
+      "unstable": f"<emoji id=5062246560432128687>🔴</emoji> Не стабильный",
+      "bad": f"⚠ Проверьте свое подключение к интернету",
+      "pong": f"<b>🏓 Понг\n<emoji id=5220226955206467824>📶</emoji></b>",
+  }   
 
   module_list["Ping"] = {
     "ping": "Свой пинг",
@@ -25,10 +27,12 @@ if lang == "ru":
 
 elif lang == "ua":
   string = {
-      "code": f"<b><emoji id=4985626654563894116>💻</emoji> Код:</b>\n",
-      "success": f"<b><emoji id=5197688912457245639>✅</emoji> Результат</b>:\n",
-      "error": f"<b><emoji id=5852812849780362931>❌</emoji> Результат</b>:\ns",
-  }    
+      "stable": f"<emoji id=5017221456195486453>🟢</emoji> Стабільний",
+      "good": f"<emoji id=5017036832731300473>🟠</emoji> Добре",
+      "unstable": f"<emoji id=5062246560432128687>🔴</emoji> Нестабільний",
+      "bad": f"⚠ Check you network connection",
+      "pong": f"<b>🏓 Понг\n<emoji id=5220226955206467824>📶</emoji></b>",
+  }   
 
   module_list["Ping"] = {
     "ping": "Свій пінг",
