@@ -21,7 +21,7 @@ def userbot():
         api_id=api_id,
         api_hash=api_hash,
         device_model=device_mod,
-        plugins=dict(root="sharkub/plugins")
+        plugins=dict(root="sharkub/modules")
     ).run()
     
 if __name__ == "__main__":

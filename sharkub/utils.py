@@ -3,7 +3,7 @@ from typing import Union
 import string
 import random
 from pyrogram import types, Client
-from sharkub.prefix import my_prefix as prefix
+from sharkub.settings.prefix import my_prefix as prefix
 
 
 def get_args(message: types.Message) -> Union[list, None]:

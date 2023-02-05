@@ -3,6 +3,27 @@ import sys
 import os
 import time
 import pip
+import configparser
+
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+lang = config.get("Language", "language")
+
+if lang == "ru":
+  string = {
+      "restarted": "<b>Юзербот успешно перезагружен</b>",
+  }    
+
+elif lang == "ua":
+  string = {
+      "restarted": "<b>Юзербот успішно перезавантажений</b>",
+  }         
+
+else:
+  string = {
+      "restarted": "<b>Userbot succesfully Restarted</b>",
+  } 
 
 def prestart(api_id, api_hash, device_mod):
     app = Client("my_account", api_id=api_id, api_hash=api_hash, device_model=device_mod)
@@ -12,8 +33,8 @@ def prestart(api_id, api_hash, device_mod):
             requirements = [
                 "install",    
                 "pyrogram",
-                "wheel",
                 "utils",
+                "wheel",
                 "telegraph",
                 "requests",
                 "wget",
@@ -32,7 +53,7 @@ def prestart(api_id, api_hash, device_mod):
                 text = "<code>Update process completed!</code>"
             else:
                 pip.main(requirements)
-                text = "**Userbot succesfully Restarted**"
+                text = string['restarted']
             try:
                 app.send_message(int(sys.argv[1]), text)
             except Exception as f:
