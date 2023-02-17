@@ -63,7 +63,6 @@ def prestart(api_id, api_hash, device_mod):
                 "aiohttp",
                 "pillow",
                 "termcolor",
-                "openai"
                 ]
             pip.main(requirements)
             text = string['restarted']
