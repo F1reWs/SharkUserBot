@@ -59,6 +59,8 @@ def prestart(api_id, api_hash, device_mod):
                 "qrcode",
                 "speedtest-cli",
                 "psutil",
+                "tgcrypto",
+                "aiohttp",
                 "pillow",
                 "termcolor",
                 "openai"
