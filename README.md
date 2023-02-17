@@ -29,8 +29,7 @@
 
 <h1>Custom modules</h1>
 <h3>Download custom modules in <a href="https://t.me/SharkUBmodules_bot">@SharkUBmodules_bot</a></h3>
-<br>
-<h3>You can create your module in SharkUserBot!</h3>
+<p>You can create your module in SharkUserBot!</p>
 
 ```python3
 from pyrogram import Client, filters
