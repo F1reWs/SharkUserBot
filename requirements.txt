@@ -15,4 +15,3 @@ speedtest-cli
 psutil
 pillow
 termcolor
-openai
