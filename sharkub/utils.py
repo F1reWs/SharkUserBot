@@ -1,10 +1,46 @@
+#    SharkUB (telegram userbot by https://github.com/Master-Stroke)
+#    Copyright (C) 2023 SharkUserBot
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    GNU General Public License https://www.gnu.org/licenses.
+
 import asyncio
 from typing import Union
 import string
 import random
 from pyrogram import types, Client
 from sharkub.settings.prefix import my_prefix as prefix
+from typing import Union
+from pyrogram.types import Message, User, Chat
 
+def get_display_name(entity: Union[User, Chat]) -> str:
+    """Получить отображаемое имя
+    Параметры:
+        entity (``pyrogram.types.User`` | ``pyrogram.types.Chat``):
+            Сущность, для которой нужно получить отображаемое имя
+    """
+    return getattr(entity, "title", None) or (
+        entity.first_name or "" + (
+            " " + entity.last_name
+            if entity.last_name else ""
+        )
+    )
+
+
+def random_id(size: int = 10) -> str:
+    """Возвращает рандомный идентификатор заданной длины
+    Параметры:
+        size (``int``, optional):
+            Длина идентификатора
+    """
+    return "".join(
+        random.choice(string.ascii_letters + string.digits)
+        for _ in range(size)
+    )
 
 def get_args(message: types.Message) -> Union[list, None]:
     """

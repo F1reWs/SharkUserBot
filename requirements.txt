@@ -1,7 +1,6 @@
 pyrogram
 install
 wheel
-utils
 telegraph
 requests
 wget
@@ -14,3 +13,4 @@ speedtest-cli
 psutil
 pillow
 termcolor
+openai

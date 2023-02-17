@@ -2,10 +2,14 @@
     <img src="https://github.com/Master-Stroke/SharkUserBot/raw/main/assets/banner.gif" width="500" alt="SharkUserBot">
     </a>
     <br>
-    <b>SharkUserBot v0.0.8.3</b>
+    <b>SharkUserBot v0.0.9</b>
     <br>
     <b>Telegram userbot</b>
 <br><br>
+
+<a href="https://github.com/Master-Stroke/SharkUserBot/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/Master-Stroke/SharkUserBot?style=for-the-badge">
+</a>
 
 <a href="https://github.com/Master-Stroke/SharkUserBot/commits/main">
     <img alt="last-commit" src="https://img.shields.io/github/last-commit/Master-Stroke/SharkUserBot?style=for-the-badge">
@@ -24,14 +28,15 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Simple+and+cool+telegram+userbot)](https://t.me/Shark_UserBot)
 
 <h1>Custom modules</h1>
-
-<p>You can create your module in SharkUserBot!</p>
+<h3>Download custom modules in <a href="https://t.me/SharkUBmodules_bot">@SharkUBmodules_bot</a></h3>
+<br>
+<h3>You can create your module in SharkUserBot!</h3>
 
 ```python3
 from pyrogram import Client, filters
-from ..settings.main_settings import module_list, file_list
+from sharkub.settings.main_settings import module_list, file_list
 
-from ..settings.prefix import my_prefix
+from sharkub.settings.prefix import my_prefix
 prefix = my_prefix()
 
 @Client.on_message(filters.command("example_edit", prefixes=prefix) & filters.me)

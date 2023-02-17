@@ -1,9 +1,20 @@
+#    SharkUB (telegram userbot by https://github.com/Master-Stroke)
+#    Copyright (C) 2023 SharkUserBot
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    GNU General Public License https://www.gnu.org/licenses.
+
 import logging
+from importlib import import_module
 import os
 
 def logger():
     logging.basicConfig(
-        filename="temp/shark_userbot.log",
+        filename="sharkub/temp/shark_userbot.log",
         filemode="w",
         format="%(asctime)s - %(message)s",
         datefmt="%d-%b-%y %H:%M:%S",
@@ -23,7 +34,7 @@ def userbot():
         device_model=device_mod,
         plugins=dict(root="sharkub/modules")
     ).run()
-    
+
 if __name__ == "__main__":
     userbot()
     logger()

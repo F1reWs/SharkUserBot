@@ -1,3 +1,13 @@
+#    SharkUB (telegram userbot by https://github.com/Master-Stroke)
+#    Copyright (C) 2023 SharkUserBot
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    GNU General Public License https://www.gnu.org/licenses.
+
 import os
 import configparser
 from pyrogram import Client, filters
@@ -47,7 +57,6 @@ async def restart(message, restart_type):
         text = "1"
     else:
         text = "2"
-
     try:
         msg_id = message.message_id
     except:
@@ -55,9 +64,9 @@ async def restart(message, restart_type):
 
     if os.name == "nt":
         await os.execvp(
-            "python -m",
+            "python",
             [
-                "python -m",
+                "python",
                 "-m",
                 "sharkub",
                 f"{message.chat.id}",
