@@ -61,7 +61,7 @@ pkg update -y && pkg install python3 && pkg install git && pkg install libjpeg-t
 - APT (Debian/Ubuntu based)
 
 ```
-sudo apt update && sudo apt upgrade -y && sudo apt install git -y && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
+sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip && sudo apt install git -y && git clone https://github.com/Master-Stroke/SharkUserBot && cd SharkUserBot && bash start.sh
 ```
 
 <h3>Windows/Mac OS</h2>
