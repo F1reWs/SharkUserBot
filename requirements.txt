@@ -1,5 +1,7 @@
 pyrogram
 install
+aiohttp
+tgcrypto
 wheel
 telegraph
 requests
