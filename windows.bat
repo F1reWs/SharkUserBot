@@ -1,2 +1,2 @@
 pip install -r requirements.txt
-python3 -m sharkub
+python -m sharkub
